@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link href="/main/style.css" type="stylesheet">
+
+</head>
+    <style>
+        body {
+        
+          
+            background-image: url('/inventario/main/img3.jpg');
+       background-size: cover;
+       background-position: center;
+       background-size: 150% 150%;
+        }
+
+        .content{
+            width: 50%;
+            margin: 0 auto;
+            background-color: transparent;
+            font-family: "Mitr", sans-serif;
+            text-align: center;
+            margin-top: 150px;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            width: 400px;
+            padding: 30px;
+           margin-top: 100px;
+        
+            color: white;
+          box-shadow: 7px 13px 37px #000;
+         border-radius: 10px;
+         
+    font-size: 15px;
+        }
+        .content label{
+            margin-right: 200px;
+        }
+
+        input[type="text"] {
+            
+    font-size: 15px;
+            background: transparent;
+    outline:none ;
+    padding: 20px;
+    display: block;
+    width: 340px;
+    border-radius: 3px; 
+    border: none ;
+    border-bottom: 1px solid blue;
+    margin: 20px auto;
+    transition: all 300ms;
+    color: white;
+        }
+
+        input[type="password"] {
+            background: transparent;
+    outline:none ;
+    padding: 20px;
+    display: block;
+    width: 340px;
+    border-radius: 3px; 
+    border: none ;
+    border-bottom: 1px solid blue;
+    margin: 20px auto;
+    transition: all 300ms;
+    color: white;
+
+    font-size: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 20px;
+    color: #fff; 
+    background:#0098cb ;
+    width: 340px;
+    margin: 15px auto;
+    margin-top: 0%;
+    border: 0;
+    border-radius:3px;
+    cursor:pointer;
+
+        }
+        input[type="submit"]:hover{
+        background-color: blue;
+
+        }
+        .regis{
+            text-decoration: none;
+            font-size: 13px;
+            border-collapse: collapse;
+            border: transparent;
+            border-radius: 15px;
+            font-family: "Mitr", sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 15px;
+            padding: 5px 50px 5px 50px;
+            background-color: #fd7e1b;
+            transition: 0.5s;
+        }
+        .regis:hover{
+            text-decoration: none;
+            color: white;
+            background-color: #298dba;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class = "content">
+        <h1>Iniciar Sesion</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Usuario: </label>
+            <br>
+            <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
+            <br>
+            <label for="pass">Contraseña: </label>
+            <br>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+            <br>
+            <input type="submit" value="Ingresar">
+        </form>
+        <a href="main/member.html" class="regis">Registro</a>
+    </div>
+ 
+</body>
+</html>
